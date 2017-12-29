@@ -1,6 +1,6 @@
 {
   "name": "@frosas/eslint-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "peerDependencies": {
     "eslint": ">=4",
     "eslint-plugin-prettier": ">=2",
