@@ -1,4 +1,4 @@
-# My usual ESLint Config
+# My usual ESLint config
 
 ## Setup
 
