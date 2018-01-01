@@ -1,3 +1,5 @@
+/* eslint-env commonjs */
+
 module.exports = {
   extends: ["@frosas/eslint-config"],
   parserOptions: {
