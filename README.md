@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-$ npm i -D @frosas/eslint-config eslint prettier eslint-plugin-prettier concurrently onchange
+$ npm i -D @frosas/eslint-config eslint prettier eslint-plugin-prettier
 ```
 
 Symlink the project-specific files:
@@ -15,7 +15,8 @@ $ ln -s node_modules/@frosas/eslint-config/project-files/.eslintignore
 
 You can also copy and edit them instead if you need customizations.
 
-Integrate it in your project scripts. For example, in your `package.json`:
+Integrate it in your project scripts. For example, in your `package.json`, and 
+after running `npm i concurrently onchange`:
 
 ```json
 {
