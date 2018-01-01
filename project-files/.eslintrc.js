@@ -1,4 +1,4 @@
-/* eslint-env commonjs */
+/* eslint-env node */
 
 module.exports = {
   extends: ["@frosas/eslint-config"],
