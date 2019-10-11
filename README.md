@@ -2,29 +2,25 @@
 
 ## Setup
 
-```bash
-$ npm i -D @frosas/eslint-config eslint prettier eslint-plugin-prettier
+```sh
+$ npx install-peerdeps -d @frosas/eslint-config
 ```
 
-Symlink the project-specific files:
+Copy the project-specific files and edit them as needed:
 
-```bash
-$ ln -s node_modules/@frosas/eslint-config/project-files/.eslintrc.js
-$ ln -s node_modules/@frosas/eslint-config/project-files/.eslintignore
+```sh
+$ cp -a node_modules/@frosas/eslint-config/project-files/. .
 ```
 
-You can also copy and edit them instead if you need customizations.
-
-Integrate it in your project scripts. For example, in your `package.json`, and 
-after running `npm i concurrently onchange`:
+Integrate it in the project development workflow. For example, in your `package.json`:
 
 ```json
 {
   "scripts": {
-    "build": "npm run lint && ...",
     "lint": "eslint .",
-    "watch": "concurrently -k -n lint,... \"npm run watch-lint\" \"...\"",
-    "watch-lint": "onchange -i '**/*.js' -- eslint . --fix"
+    "test": "npm run lint && ...",
+    "watch-lint": "onchange -i '**/*.js' -- npm run lint -- --fix",
+    "watch": "concurrently -k \"npm run watch-lint\" \"...\""
   }
 }
 ```
