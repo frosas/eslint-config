@@ -1,6 +1,8 @@
+/* eslint-env node */
+
 // See https://eslint.org/docs/user-guide/configuring
 module.exports = {
-  extends: ["@frosas/eslint-config"],
+  extends: ["./index.js"],
   parserOptions: {
     // For an ECMAScript version appropriate to a given Node version, check
     // https://node.green
@@ -8,7 +10,6 @@ module.exports = {
   },
   env: {
     es6: true,
-    // node: true,
-    // browser: true
+    node: true
   }
 };
