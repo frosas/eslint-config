@@ -5,12 +5,8 @@
   "repository": "frosas/eslint-config",
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run lint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm t"
-    }
+    "test": "npm run lint",
+    "prepare": "husky install"
   },
   "peerDependencies": {
     "eslint": "^7.1.0",
