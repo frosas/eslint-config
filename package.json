@@ -1,6 +1,6 @@
 {
   "name": "@frosas/eslint-config",
-  "version": "5.4.0",
+  "version": "6.0.0",
   "license": "MIT",
   "repository": "frosas/eslint-config",
   "scripts": {
