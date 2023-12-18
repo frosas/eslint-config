@@ -1,3 +1,7 @@
+## 6.0.0
+
+- Bump peer dependencies major version
+
 ## 5.0.0
 
 - Bump peer dependencies major version

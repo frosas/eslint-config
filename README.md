@@ -30,3 +30,9 @@ Integrate it in the project development workflow. For example, in your `package.
   }
 }
 ```
+
+## Contributing
+
+- Update CHANGELOG.md
+- `npm version <major | minor | patch>`
+- `npm publish`
