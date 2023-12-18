@@ -1,3 +1,7 @@
+## 6.1.0
+
+- Remove semicolons
+
 ## 6.0.0
 
 - Bump peer dependencies major version
