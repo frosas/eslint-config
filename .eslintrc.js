@@ -1,6 +1,6 @@
 /* eslint-env node */
 
-// See https://eslint.org/docs/user-guide/configuring
+/** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
   extends: ["./index.js"],
   parserOptions: {
