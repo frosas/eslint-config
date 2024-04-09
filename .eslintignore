@@ -1,6 +1,0 @@
-# Don't ignore hidden files
-!**/.*.js
-
-# We have to ignore everything there because the .eslintrc.js in it
-# TODO Is there any way to not apply the config in that file?
-project-files

@@ -3,19 +3,21 @@
   "version": "6.1.0",
   "license": "MIT",
   "repository": "frosas/eslint-config",
+  "type": "module",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint",
     "test": "npm run lint",
     "prepare": "husky"
   },
   "peerDependencies": {
-    "eslint": "^7.1.0 || ^8.6.0",
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
     "prettier": "^3.1.1"
   },
   "devDependencies": {
-    "eslint": "^8.6.0",
+    "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
     "husky": "^9.0.11",
