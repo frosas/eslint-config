@@ -1,5 +1,6 @@
 // See https://eslint.org/docs/latest/use/configure/
 
+import globals from "globals"
 import frosasConfig from "@frosas/eslint-config"
 
 /** @type import('eslint').Linter.FlatConfig[] */
@@ -13,9 +14,10 @@ export default [
         ecmaVersion: 2020,
       },
       globals: {
-        es6: true,
-        // node: true,
-        // browser: true
+        ...globals.es2020,
+        // ...globals.node,
+        // ...globals.browser,
+      },
       },
     },
   {
