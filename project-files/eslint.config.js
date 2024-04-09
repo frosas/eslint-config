@@ -5,7 +5,7 @@ import frosasConfig from "@frosas/eslint-config"
 
 /** @type import('eslint').Linter.FlatConfig[] */
 export default [
-  frosasConfig,
+  ...frosasConfig,
   {
     languageOptions: {
       parserOptions: {
@@ -18,8 +18,8 @@ export default [
         // ...globals.node,
         // ...globals.browser,
       },
-      },
     },
+  },
   {
     ignores: [
       // 'dist/'
