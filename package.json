@@ -3,8 +3,6 @@
   "version": "7.0.1",
   "license": "MIT",
   "repository": "frosas/eslint-config",
-  "type": "module",
-  "main": "index.js",
   "scripts": {
     "lint": "eslint",
     "test": "npm run lint",

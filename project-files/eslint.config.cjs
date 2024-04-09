@@ -1,10 +1,10 @@
-/* eslint-env node */
+// See https://eslint.org/docs/latest/use/configure/
 
-import globals from "globals"
-import frosasConfig from "./index.js"
+const globals = require("globals")
+const frosasConfig = require("@frosas/eslint-config")
 
 /** @type import('eslint').Linter.FlatConfig[] */
-export default [
+module.exports = [
   ...frosasConfig,
   {
     languageOptions: {
@@ -15,8 +15,14 @@ export default [
       },
       globals: {
         ...globals.es2020,
-        ...globals.node,
+        // ...globals.node,
+        // ...globals.browser,
       },
     },
+  },
+  {
+    ignores: [
+      // 'dist/'
+    ],
   },
 ]
