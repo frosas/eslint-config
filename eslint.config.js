@@ -17,8 +17,5 @@ export default [
         node: true,
       },
     },
-    ignores: [
-      "!**/.*.js", // Don't ignore hidden files
-    ],
   },
 ]

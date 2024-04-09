@@ -18,8 +18,9 @@ export default [
         // browser: true
       },
     },
+  {
     ignores: [
-      "!**/.*.js", // Don't ignore hidden files
+      // 'dist/'
     ],
   },
 ]
