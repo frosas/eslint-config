@@ -1,3 +1,8 @@
+## 7.0.0 (pre-release)
+
+- Upgrade to ESLint 9 (**breaking change**)
+- Migrate to ESM (**breaking change**)
+
 ## 6.1.0
 
 - Remove semicolons
