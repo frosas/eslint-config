@@ -3,12 +3,6 @@
 ## Setup
 
 ```sh
-$ npx install-peerdeps -d @frosas/eslint-config
-```
-
-TODO Verify this can be done in npm 7 instead:
-
-```sh
 $ npm i -D @frosas/eslint-config
 ```
 
