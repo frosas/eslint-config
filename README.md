@@ -25,8 +25,8 @@ Integrate it into the project development workflow. For example, in your `packag
   "scripts": {
     "lint": "eslint .",
     "test": "npm run lint && ...",
-    "watch-lint": "onchange -i '**/*.js' -- npm run lint -- --fix",
-    "watch": "concurrently -k \"npm run watch-lint\" \"...\""
+    "dev-lint": "onchange -i '**/*.js' -- npm run lint -- --fix",
+    "dev": "concurrently -k \"npm run dev-lint\" \"...\""
   }
 }
 ```
