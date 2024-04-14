@@ -1,7 +1,7 @@
-const js = require("@eslint/js")
-const prettierPluginRecommended = require("eslint-plugin-prettier/recommended")
-const { default: tsEslint, config } = require("typescript-eslint")
-const reactConfigRecommended = require("eslint-plugin-react/configs/recommended")
+import js from "@eslint/js"
+import prettierPluginRecommended from "eslint-plugin-prettier/recommended"
+import tsEslint, { config } from "typescript-eslint"
+import reactConfigRecommended from "eslint-plugin-react/configs/recommended.js"
 
 const reactConfig = config({
   files: ["**/*.{jsx,tsx}"],
@@ -26,7 +26,7 @@ const tsConfig = config(...tsEslint.configs.recommended, {
   },
 }).map((config) => ({ ...config, files: ["**/*.{ts,tsx}"] }))
 
-module.exports = config(
+export default config(
   js.configs.recommended,
   ...formattingConfig,
   ...tsConfig,

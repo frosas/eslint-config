@@ -2,6 +2,7 @@
   "name": "@frosas/eslint-config",
   "version": "7.3.0",
   "license": "MIT",
+  "main": "index.mjs",
   "scripts": {
     "lint": "eslint .",
     "test": "npm run lint",
