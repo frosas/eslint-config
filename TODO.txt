@@ -1,0 +1,7 @@
+## should 
+
+- is npx install-peerdeps still the way to go?
+
+## could
+
+- vscode setup
