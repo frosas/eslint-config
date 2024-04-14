@@ -32,3 +32,7 @@ export default config(
   ...tsConfig,
   ...reactConfig,
 )
+
+export {
+  config, // Exported for convenience
+}
