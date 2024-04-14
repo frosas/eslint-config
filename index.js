@@ -11,7 +11,7 @@ const tsConfig = config(...tsEslint.configs.recommended, {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
   },
-})
+}).map((config) => ({ ...config, files: ["**/*.{ts,tsx}"] }))
 
 module.exports = config(
   js.configs.recommended,
