@@ -1,0 +1,10 @@
+{
+  "include": ["index.mjs"],
+  "compilerOptions": {
+    "outDir": "types",
+    "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "skipLibCheck": true
+  }
+}

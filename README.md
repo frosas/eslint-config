@@ -25,6 +25,7 @@ Integrate it into the project development workflow. For example, in your `packag
 
 ## Contributing
 
+- `npm run generate-types` and commit the changes
 - Update CHANGELOG.md
 - `npm version <major | minor | patch>`
 - `npm publish [--tag next]`
