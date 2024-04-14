@@ -1,6 +1,19 @@
 const js = require("@eslint/js")
 const prettierPluginRecommended = require("eslint-plugin-prettier/recommended")
 const { default: tsEslint, config } = require("typescript-eslint")
+const reactConfigRecommended = require("eslint-plugin-react/configs/recommended")
+
+const reactConfig = config({
+  files: ["**/*.{jsx,tsx}"],
+  ...reactConfigRecommended,
+  settings: {
+    ...reactConfigRecommended.settings,
+    react: {
+      ...reactConfigRecommended.settings?.react,
+      version: "detect",
+    },
+  },
+})
 
 const formattingConfig = config(prettierPluginRecommended, {
   rules: { "prettier/prettier": ["error", { semi: false }] },
@@ -17,4 +30,5 @@ module.exports = config(
   js.configs.recommended,
   ...formattingConfig,
   ...tsConfig,
+  ...reactConfig,
 )
