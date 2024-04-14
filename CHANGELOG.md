@@ -1,3 +1,7 @@
+## 7.2.0
+
+- Lint TypeScript files
+
 ## 7.0.0
 
 - Upgrade to ESLint 9 (**breaking change**)
