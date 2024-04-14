@@ -1,3 +1,7 @@
+## 8.0.0 (pre-release)
+
+- Switch to ESM (**breaking change**)
+
 ## 7.2.0
 
 - Lint TypeScript files
