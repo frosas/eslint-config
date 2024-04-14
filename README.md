@@ -27,4 +27,4 @@ Integrate it into the project development workflow. For example, in your `packag
 
 - Update CHANGELOG.md
 - `npm version <major | minor | patch>`
-- `npm publish`
+- `npm publish [--tag next]`
