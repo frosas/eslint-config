@@ -1,6 +1,5 @@
 ## should 
 
-- prevent package users from having to handle the "Could not find a declaration file for module '@frosas/eslint-config'" error
 - once eslint-plugin-react supports it, upgrade to eslint 9
 
 ## could
