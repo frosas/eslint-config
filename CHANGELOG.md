@@ -1,7 +1,6 @@
-## 7.0.0 (pre-release)
+## 7.0.0
 
 - Upgrade to ESLint 9 (**breaking change**)
-- Migrate to ESM (**breaking change**)
 
 ## 6.1.0
 
