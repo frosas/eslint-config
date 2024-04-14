@@ -18,7 +18,7 @@ Copy the project-specific files and edit them as needed:
 $ cp -a node_modules/@frosas/eslint-config/project-files/. .
 ```
 
-Integrate it in the project development workflow. For example, in your `package.json`:
+Integrate it into the project development workflow. For example, in your `package.json`:
 
 ```json
 {
