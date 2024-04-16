@@ -16,7 +16,11 @@ const tsConfig = config(...tsEslint.configs.recommended, {
 
 const reactConfig = config({
   files: ["**/*.{jsx,tsx}"],
-  ...reactConfigRecommended,
+  ...{
+    ...reactConfigRecommended,
+    // Explicitly include it as it's not enumerable
+    languageOptions: reactConfigRecommended.languageOptions,
+  },
   settings: {
     ...reactConfigRecommended.settings,
     react: {
