@@ -1,10 +1,9 @@
 // See https://eslint.org/docs/latest/use/configure/
 
-const globals = require("globals")
-const frosasConfig = require("@frosas/eslint-config")
+import globals from "globals"
+import frosasConfig, { config } from "@frosas/eslint-config"
 
-/** @type import('eslint').Linter.FlatConfig[] */
-module.exports = [
+export default config(
   ...frosasConfig,
   {
     languageOptions: {
@@ -25,4 +24,4 @@ module.exports = [
       // 'dist/'
     ],
   },
-]
+)
