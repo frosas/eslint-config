@@ -1,6 +1,8 @@
 ## should 
 
 - once eslint-plugin-react supports it, upgrade to eslint 9
+- fix frosasConfig type not being correct
+  - it has to do with the import("typescript-eslint/node_modules/@typescript-eslint/utils/dist/ts-eslint") path not being correct
 
 ## could
 
