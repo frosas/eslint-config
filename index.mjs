@@ -2,7 +2,7 @@ import js from "@eslint/js"
 import prettierPluginRecommended from "eslint-plugin-prettier/recommended"
 import tsEslint, { config } from "typescript-eslint"
 import reactConfigRecommended from "eslint-plugin-react/configs/recommended.js"
-import * as globals from "globals"
+import globals from "globals"
 
 const formattingConfig = config(prettierPluginRecommended, {
   rules: { "prettier/prettier": ["error", { semi: false }] },
