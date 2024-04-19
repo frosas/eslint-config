@@ -1,8 +1,5 @@
-/* eslint-env node */
-
-import globals from "globals"
 import { config } from "typescript-eslint"
-import frosasConfig from "./index.js"
+import frosasConfig, { globals } from "./index.js"
 
 export default config(
   ...frosasConfig,
