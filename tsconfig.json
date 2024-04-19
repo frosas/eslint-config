@@ -1,6 +1,6 @@
 {
-  "include": ["index.mjs"],
   "extends": "@tsconfig/node20",
+  "include": ["index.js"],
   "compilerOptions": {
     "outDir": "types",
     "allowJs": true,
