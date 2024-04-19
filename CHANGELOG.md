@@ -1,4 +1,4 @@
-## 8.0.0 (pre-release)
+## 8.0.0
 
 - Switch to ESM (**breaking change**)
 
