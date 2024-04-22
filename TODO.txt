@@ -15,3 +15,4 @@
     - https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md
 - add ts recommended type-checked rules
   - https://typescript-eslint.io/users/configs/#recommended-type-checked
+- https://www.npmjs.com/package/eslint-plugin-react-hooks
