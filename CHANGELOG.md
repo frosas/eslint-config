@@ -1,3 +1,7 @@
+## Unreleased
+
+- Drop support for ESLint 8 (**breaking change**)
+
 ## 8.0.0
 
 - Switch to ESM (**breaking change**)
