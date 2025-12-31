@@ -1,4 +1,4 @@
-## Unreleased
+## 9.0.0
 
 - Drop support for ESLint 8 (**breaking change**)
 - Stop re-exporting typescript-eslint `config`; import `defineConfig` from `eslint/config` instead (**breaking change**)
