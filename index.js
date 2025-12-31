@@ -1,9 +1,28 @@
 import js from "@eslint/js"
+import json from "@eslint/json"
 import { defineConfig } from "eslint/config"
 import prettierPluginRecommended from "eslint-plugin-prettier/recommended"
 import reactConfigRecommended from "eslint-plugin-react/configs/recommended.js"
 import globals from "globals"
 import tsEslint from "typescript-eslint"
+
+const jsConfig = defineConfig([
+  {
+    files: ["**/*.{js,cjs,mjs,jsx,ts,tsx}"],
+    plugins: { js },
+    extends: ["js/recommended"],
+  },
+])
+
+const jsonConfig = defineConfig([
+  {
+    files: ["**/*.json"],
+    ignores: ["package-lock.json"],
+    plugins: { json },
+    language: "json/json",
+    extends: ["json/recommended"],
+  },
+])
 
 const formattingConfig = defineConfig([
   prettierPluginRecommended,
@@ -39,7 +58,8 @@ const reactConfig = defineConfig([
 ])
 
 export default defineConfig([
-  js.configs.recommended,
+  ...jsConfig,
+  ...jsonConfig,
   ...formattingConfig,
   ...tsConfig,
   ...reactConfig,

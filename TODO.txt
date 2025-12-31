@@ -5,8 +5,6 @@
     - track progress in https://github.com/jsx-eslint/eslint-plugin-react/issues/3699
 - fix frosasConfig type not being correct
   - it has to do with the import("typescript-eslint/node_modules/@typescript-eslint/utils/dist/ts-eslint") path not being correct
-- json support
-  - see https://github.com/eslint/json
 
 ## could
 
