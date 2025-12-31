@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["index.js"],
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "public-types",
+    "declaration": true,
+    "emitDeclarationOnly": true
+  }
+}

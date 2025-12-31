@@ -1,3 +1,8 @@
+## Unreleased
+
+- Drop support for ESLint 8 (**breaking change**)
+- Stop re-exporting typescript-eslint `config`; import `defineConfig` from `eslint/config` instead (**breaking change**)
+
 ## 8.0.0
 
 - Switch to ESM (**breaking change**)

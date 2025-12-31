@@ -1,7 +1,7 @@
-import { config } from "typescript-eslint"
+import { defineConfig } from "eslint/config"
 import frosasConfig, { globals } from "./index.js"
 
-export default config(
+export default defineConfig([
   ...frosasConfig,
   {
     languageOptions: {
@@ -16,5 +16,5 @@ export default config(
       },
     },
   },
-  { ignores: ["types/"] },
-)
+  { ignores: ["public-types/"] },
+])
