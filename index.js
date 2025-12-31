@@ -22,6 +22,13 @@ const jsonConfig = defineConfig([
     language: "json/json",
     extends: ["json/recommended"],
   },
+  {
+    files: ["**/tsconfig.json", ".vscode/*.json"],
+    plugins: { json },
+    language: "json/jsonc",
+    languageOptions: { allowTrailingCommas: true },
+    extends: ["json/recommended"],
+  },
 ])
 
 const formattingConfig = defineConfig([
