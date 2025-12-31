@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+check_diff_public_types() {
+  git diff --quiet -- public-types
+}
+
+check_untracked_public_types() {
+  [ -z "$(git ls-files --others -- public-types)" ]
+}
+
+npm run generate-public-types
+
+if ! check_diff_public_types || ! check_untracked_public_types; then
+  echo "public-types is out of sync. Regenerate and stage/commit it."
+  exit 1
+fi

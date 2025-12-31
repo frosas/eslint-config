@@ -8,7 +8,7 @@
   "scripts": {
     "generate-public-types": "rm -rf public-types && tsc -p tsconfig.public-types.json",
     "lint": "eslint .",
-    "test": "npm run lint && npm run typecheck",
+    "test": "npm run lint && npm run typecheck && ./scripts/check-public-types",
     "typecheck": "tsc",
     "prepare": "husky"
   },

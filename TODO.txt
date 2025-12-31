@@ -7,7 +7,6 @@
   - it has to do with the import("typescript-eslint/node_modules/@typescript-eslint/utils/dist/ts-eslint") path not being correct
 - json support
   - see https://github.com/eslint/json
-- npm test to fail if npm generate-public-types would make any changes
 
 ## could
 
