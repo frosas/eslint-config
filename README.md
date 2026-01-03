@@ -25,7 +25,9 @@ Integrate it into the project development workflow. For example, in your `packag
 
 ## Contributing
 
+- Make the changes
 - `npm run generate-public-types` and commit the changes
+- Test the changes with `npm test` and, optionally, `npm link` from another project
 - Update CHANGELOG.md
 - `npm version <major | minor | patch>`
 - `npm publish [--tag next]`
