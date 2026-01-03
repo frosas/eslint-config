@@ -26,7 +26,7 @@ Integrate it into the project development workflow. For example, in your `packag
 ## Contributing
 
 - Make the changes
-- Optionally, test the changes from another project with `npm link`
+- Optionally, test the changes from another project (e.g., `npm install .../eslint-config`)
 - Update CHANGELOG.md
 - `npm version <major | minor | patch>`
 - `npm publish [--tag next]`
