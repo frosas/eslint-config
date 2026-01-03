@@ -3,7 +3,7 @@
   "include": ["index.js"],
   "compilerOptions": {
     "noEmit": false,
-    "outDir": "public-types",
+    "outDir": "dist/types",
     "declaration": true,
     "emitDeclarationOnly": true
   }

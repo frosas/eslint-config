@@ -3,12 +3,13 @@
   "version": "9.3.0",
   "license": "MIT",
   "main": "index.js",
-  "types": "public-types/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "type": "module",
   "scripts": {
-    "generate-public-types": "rm -rf public-types && tsc -p tsconfig.public-types.json",
+    "build": "npm run build-types",
+    "build-types": "tsc -p tsconfig.types.json",
     "lint": "eslint .",
-    "test": "npm run lint && npm run typecheck && ./scripts/check-public-types",
+    "test": "npm run lint && npm run typecheck",
     "typecheck": "tsc",
     "prepare": "husky"
   },

@@ -1,1 +1,13 @@
+#!/bin/sh
+# Shebang ignored by Husky but used by other tools
+
+set -eu
+
 npm test
+
+npm run build # May make changes
+
+if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
+  echo "There are untracked or unstaged changes. Add or revert them before committing."
+  exit 1
+fi

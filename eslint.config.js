@@ -16,5 +16,5 @@ export default defineConfig([
       },
     },
   },
-  { ignores: ["public-types/"] },
+  { ignores: ["dist/types"] },
 ])
