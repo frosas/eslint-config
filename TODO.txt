@@ -19,3 +19,4 @@
 - anything to add from https://github.com/dustinspecker/awesome-eslint?
 - https://github.com/azat-io/eslint-plugin-perfectionist?
 - https://github.com/JoshuaKGoldberg/eslint-plugin-package-json?
+- https://oxc.rs/
