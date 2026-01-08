@@ -1,6 +1,7 @@
 import js from "@eslint/js"
 import json from "@eslint/json"
 import { defineConfig } from "eslint/config"
+import importPlugin from "eslint-plugin-import"
 import prettierPluginRecommended from "eslint-plugin-prettier/recommended"
 import reactConfigRecommended from "eslint-plugin-react/configs/recommended.js"
 import globals from "globals"
@@ -64,12 +65,26 @@ const reactConfig = defineConfig([
   },
 ])
 
+const importConfig = defineConfig({
+  plugins: { import: importPlugin },
+  rules: {
+    "import/order": [
+      "error",
+      {
+        alphabetize: { order: "asc" },
+        named: true,
+      },
+    ],
+  },
+})
+
 export default defineConfig([
   ...jsConfig,
   ...jsonConfig,
   ...formattingConfig,
   ...tsConfig,
   ...reactConfig,
+  ...importConfig,
 ])
 
 export {

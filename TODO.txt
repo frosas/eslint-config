@@ -16,3 +16,5 @@
 - add ts recommended type-checked rules
   - https://typescript-eslint.io/users/configs/#recommended-type-checked
 - https://www.npmjs.com/package/eslint-plugin-react-hooks
+- anything to add from https://github.com/dustinspecker/awesome-eslint?
+- https://github.com/azat-io/eslint-plugin-perfectionist?
