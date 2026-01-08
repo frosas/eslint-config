@@ -1,3 +1,7 @@
+## 10.0.0
+
+- Sort imports (**breaking change**)
+
 ## 9.0.0
 
 - Drop support for ESLint 8 (**breaking change**)
