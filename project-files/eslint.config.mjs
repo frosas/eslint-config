@@ -1,6 +1,11 @@
 // See https://eslint.org/docs/latest/use/configure/
 
-import frosasConfig, { config, globals } from "@frosas/eslint-config"
+import frosasConfig, {
+  buildGitIgnoreConfig,
+  config,
+  globals,
+} from "@frosas/eslint-config"
+import { globalIgnores } from "eslint/config"
 
 export default config(
   ...frosasConfig,
@@ -18,9 +23,6 @@ export default config(
       },
     },
   },
-  {
-    ignores: [
-      // 'dist/'
-    ],
-  },
+  buildGitIgnoreConfig(import.meta.dirname),
+  globalIgnores(["..."]),
 )
