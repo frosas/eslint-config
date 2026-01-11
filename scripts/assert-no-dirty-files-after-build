@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -eu
+
+npm run build # May make changes
+
+assert_no_dirty_files() {
+  local dir="$1"
+  git diff --quiet "$dir"
+  if [ -n "$(git ls-files --others --exclude-standard "$dir")" ]; then
+    return 1
+  fi
+}
+
+if ! assert_no_dirty_files dist; then
+  echo "There are untracked or unstaged changes. Add or revert them before committing."
+  exit 1
+fi

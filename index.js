@@ -1,3 +1,5 @@
+import { resolve } from "node:path"
+import { includeIgnoreFile } from "@eslint/compat"
 import js from "@eslint/js"
 import json from "@eslint/json"
 import { defineConfig } from "eslint/config"
@@ -6,6 +8,8 @@ import prettierPluginRecommended from "eslint-plugin-prettier/recommended"
 import reactConfigRecommended from "eslint-plugin-react/configs/recommended.js"
 import globals from "globals"
 import tsEslint from "typescript-eslint"
+
+/** @import { Linter } from "eslint" */
 
 const jsConfig = defineConfig([
   {
@@ -77,6 +81,15 @@ const importConfig = defineConfig({
     ],
   },
 })
+
+/**
+ * @type {(dirname: string) => Linter.Config}
+ * @param {string | undefined} dirname
+ */
+export const buildGitIgnoreConfig = (dirname) => {
+  const path = resolve(dirname, ".gitignore")
+  return includeIgnoreFile(path, path)
+}
 
 export default defineConfig([
   ...jsConfig,
