@@ -1,4 +1,4 @@
-import { defineConfig } from "eslint/config"
+import { defineConfig, globalIgnores } from "eslint/config"
 import frosasConfig, { globals } from "./index.js"
 
 export default defineConfig([
@@ -16,5 +16,5 @@ export default defineConfig([
       },
     },
   },
-  { ignores: ["dist/types"] },
+  globalIgnores(["dist/types"]),
 ])
