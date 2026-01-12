@@ -41,15 +41,17 @@ const formattingConfig = defineConfig([
   { rules: { "prettier/prettier": ["error", { semi: false }] } },
 ])
 
-const tsConfig = defineConfig([
-  ...tsEslint.configs.recommended,
-  {
-    rules: {
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/explicit-module-boundary-types": "off",
+const tsConfig = defineConfig(tsEslint.configs.recommendedTypeChecked, {
+  languageOptions: {
+    parserOptions: {
+      projectService: true,
     },
   },
-]).map((config) => ({ ...config, files: ["**/*.{ts,tsx}"] }))
+  rules: {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+  },
+}).map((config) => ({ ...config, files: ["**/*.{ts,tsx}"] }))
 
 const reactConfig = defineConfig([
   {
