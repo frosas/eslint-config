@@ -3,10 +3,6 @@
 ## could
 
 - document vscode setup
-- include https://github.com/sindresorhus/eslint-plugin-unicorn
-  - it may be quite opinionated, so maybe just a subset of it
-  - some interesting ones
-    - https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md
 - add ts recommended type-checked rules
   - https://typescript-eslint.io/users/configs/#recommended-type-checked
 - https://www.npmjs.com/package/eslint-plugin-react-hooks
