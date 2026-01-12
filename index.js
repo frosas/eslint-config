@@ -11,9 +11,11 @@ import tsEslint from "typescript-eslint"
 
 /** @import { Linter } from "eslint" */
 
+const tsFilesGlob = "**/*.{ts,tsx,mts,cts}"
+
 const jsConfig = defineConfig([
   {
-    files: ["**/*.{js,cjs,mjs,jsx,ts,tsx}"],
+    files: ["**/*.{js,jsx,cjs,mjs}", tsFilesGlob],
     plugins: { js },
     extends: ["js/recommended"],
   },
@@ -51,7 +53,7 @@ const tsConfig = defineConfig(tsEslint.configs.recommendedTypeChecked, {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
   },
-}).map((config) => ({ ...config, files: ["**/*.{ts,tsx}"] }))
+}).map((config) => ({ ...config, files: [tsFilesGlob] }))
 
 const reactConfig = defineConfig([
   {
