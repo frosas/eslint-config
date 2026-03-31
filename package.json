@@ -1,6 +1,6 @@
 {
   "name": "@frosas/eslint-config",
-  "version": "10.3.2",
+  "version": "10.3.3",
   "license": "MIT",
   "main": "index.js",
   "types": "dist/types/index.d.ts",
