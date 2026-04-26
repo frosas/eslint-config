@@ -2,6 +2,8 @@
   "extends": "@tsconfig/node24",
   "compilerOptions": {
     "allowJs": true,
-    "noEmit": true
+    "moduleResolution": "nodenext",
+    "noEmit": true,
+    "types": []
   }
 }
