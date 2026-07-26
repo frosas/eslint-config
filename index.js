@@ -3,7 +3,7 @@ import { includeIgnoreFile } from "@eslint/compat"
 import js from "@eslint/js"
 import json from "@eslint/json"
 import { defineConfig } from "eslint/config"
-import importPlugin from "eslint-plugin-import"
+import { importX } from "eslint-plugin-import-x"
 import prettierPluginRecommended from "eslint-plugin-prettier/recommended"
 import reactConfigRecommended from "eslint-plugin-react/configs/recommended.js"
 import globals from "globals"
@@ -74,9 +74,9 @@ const reactConfig = defineConfig([
 ])
 
 const importConfig = defineConfig({
-  plugins: { import: importPlugin },
+  plugins: { "import-x": importX },
   rules: {
-    "import/order": [
+    "import-x/order": [
       "error",
       {
         alphabetize: { order: "asc" },
