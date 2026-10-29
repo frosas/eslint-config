@@ -2,10 +2,10 @@ import { resolve } from "node:path"
 import { includeIgnoreFile } from "@eslint/compat"
 import js from "@eslint/js"
 import json from "@eslint/json"
+import eslintReact from "@eslint-react/eslint-plugin"
 import { defineConfig } from "eslint/config"
 import { importX } from "eslint-plugin-import-x"
 import prettierPluginRecommended from "eslint-plugin-prettier/recommended"
-import reactConfigRecommended from "eslint-plugin-react/configs/recommended.js"
 import globals from "globals"
 import tsEslint from "typescript-eslint"
 
@@ -57,19 +57,8 @@ const tsConfig = defineConfig(tsEslint.configs.recommendedTypeChecked, {
 
 const reactConfig = defineConfig([
   {
+    ...eslintReact.configs["recommended-typescript"],
     files: ["**/*.{jsx,tsx}"],
-    ...{
-      ...reactConfigRecommended,
-      // Explicitly include it as it's not enumerable
-      languageOptions: reactConfigRecommended.languageOptions,
-    },
-    settings: {
-      ...reactConfigRecommended.settings,
-      react: {
-        ...reactConfigRecommended.settings?.react,
-        version: "detect",
-      },
-    },
   },
 ])
 

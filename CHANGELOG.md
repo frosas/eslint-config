@@ -1,3 +1,8 @@
+## 11.0.0
+
+- Upgrade to ESLint 10; drop support for ESLint 9 (**breaking change**)
+- Replace `eslint-plugin-react` with `@eslint-react/eslint-plugin` (**breaking change**)
+
 ## 10.0.0
 
 - Sort imports (**breaking change**)
