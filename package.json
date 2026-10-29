@@ -33,5 +33,11 @@
     "eslint": "^10.0.0",
     "husky": "^9.0.11",
     "typescript": "^6.0.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "dist/types",
+    "project-files",
+    "CHANGELOG.md"
+  ]
 }
