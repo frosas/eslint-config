@@ -3,7 +3,7 @@
  * @param {string | undefined} dirname
  */
 export const buildGitIgnoreConfig: (dirname: string) => Linter.Config;
-declare const _default: import("eslint/config").Config[];
+declare const _default: import("eslint/config").ConfigObject[];
 export default _default;
 export { globals };
 import type { Linter } from "eslint";

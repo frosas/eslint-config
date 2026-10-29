@@ -16,5 +16,5 @@ export default defineConfig([
       },
     },
   },
-  globalIgnores(["dist/types"]),
+  globalIgnores(["dist/types", "project-files"]),
 ])
