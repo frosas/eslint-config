@@ -1,10 +1,11 @@
+import globals from "globals";
+import type { Linter } from "eslint";
 /**
  * @type {(dirname: string) => Linter.Config}
  * @param {string | undefined} dirname
  */
-export const buildGitIgnoreConfig: (dirname: string) => Linter.Config;
-declare const _default: import("eslint/config").ConfigObject[];
-export default _default;
-export { globals };
-import type { Linter } from "eslint";
-import globals from "globals";
+export declare const buildGitIgnoreConfig: (dirname: string) => Linter.Config;
+/** @type {Linter.Config[]} */
+declare const config: Linter.Config[];
+export default config;
+export { globals, };

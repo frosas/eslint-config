@@ -84,7 +84,8 @@ export const buildGitIgnoreConfig = (dirname) => {
   return includeIgnoreFile(path, path)
 }
 
-export default defineConfig([
+/** @type {Linter.Config[]} */
+const config = defineConfig([
   ...jsConfig,
   ...jsonConfig,
   ...formattingConfig,
@@ -92,6 +93,8 @@ export default defineConfig([
   ...reactConfig,
   ...importConfig,
 ])
+
+export default config
 
 export {
   // Exported for convenience
